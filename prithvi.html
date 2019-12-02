@@ -1,0 +1,61 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" name="viewport" content="text\html" charset="UTF-8"/>
+  <title>Sleefax</title>
+  <link href="login.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet"/>
+</head>
+<body>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+  <script>
+
+
+
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBqc4UFBzEgmvzr0VDkSHrPs-yiDfkwIcY",
+      authDomain: "login-67bf5.firebaseapp.com",
+      databaseURL: "https://login-67bf5.firebaseio.com",
+      projectId: "login-67bf5",
+      storageBucket: "login-67bf5.appspot.com",
+      messagingSenderId: "376081891312",
+      appId: "1:376081891312:web:3a6a8d29393fa4cbbda735",
+      measurementId: "G-V9GE9YEZGW"
+    };
+                                                                                          // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+  <div class="signin">
+    <form>
+      <h2 style="color:white">Log In</h2>
+      <input type="text" name="username" id="uname" placeholder="Username">
+      <br><br>
+      <input type="password" name="password" id="upass" placeholder="password">
+      <br>
+      <br><br>
+      <input type="button" value="Log In" id="login" onclick="readData()"><br>
+
+
+      <br><br>
+      <div id="container">
+        <a href="#" style="margin-right:0px; font-size:13px;font-family:Tahoma,Geneva,sans-serif;">Reset password  </a>
+        <a href="#" style="margin-right:0px; font-size:13px;font-family:Tahoma,Geneva,sans-serif;">Forgot password</a>
+      </div>
+      <br><br><br>
+      Don't have account?  <a href="nitin.html">&nbsp;Sign Up</a>
+
+    </form>
+  </div>
+  <script type="text/javascript" src="index.js"></script>
+<p>
+  <ol id="sl">
+</p>
+
+
+
+</body>
+</html>

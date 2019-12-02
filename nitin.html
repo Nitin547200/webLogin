@@ -1,0 +1,54 @@
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+<script>
+
+
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBqc4UFBzEgmvzr0VDkSHrPs-yiDfkwIcY",
+    authDomain: "login-67bf5.firebaseapp.com",
+    databaseURL: "https://login-67bf5.firebaseio.com",
+    projectId: "login-67bf5",
+    storageBucket: "login-67bf5.appspot.com",
+    messagingSenderId: "376081891312",
+    appId: "1:376081891312:web:3a6a8d29393fa4cbbda735",
+    measurementId: "G-V9GE9YEZGW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+
+<link href="nitin.css" rel="stylesheet" type="text/css"/>
+ <div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+
+    <input type="text" name="email" placeholder="E-mail" id="email"/>
+    <input type="password" name="password" placeholder="Password" id="pass"/>
+    <input type="password" name="password2" placeholder="Retype password" />
+    <input type="text" name="shopname" placeholder="Shopname" id="shopname" />
+    <input type="text" name="area" placeholder="Area" id="area"/>
+    <input type="text" name="latutude" placeholder="Latitude" id="lat"/>
+    <input type="text" name="longitude" placeholder="Longitude" id="long"/>
+    <input type="text" name="username" placeholder="Username" id="username"/>
+    <input type="text" name="phone" placeholder="Phone No." id="phone"/>
+
+    <input type="button" value="Sign Me Up" id="signin" onclick="writeData()"><br>
+
+    <input type="button" value="Log In" id="login" onclick="readData()"><br>
+
+  </div>
+
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+
+    <button class="social-signin facebook">Log in with facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google">Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+<script type="text/javascript" src="index.js"></script>
